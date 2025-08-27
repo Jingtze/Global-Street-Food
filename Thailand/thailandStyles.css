@@ -1,0 +1,276 @@
+/* =============== Thailand Page (content-only) =============== */
+
+/* Use the same content width wrapper as Japan */
+main.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Card layout: consistent left-right alignment */
+.food-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 2.5rem;
+
+  /* start hidden for animation */
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: transform .7s ease, opacity .6s ease;
+  transform: translateY(32px);
+  /* all cards slide up from below */
+}
+
+/* When revealed */
+.food-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Video wrapper - fixed size container */
+.video-wrapper {
+  flex: 0 0 400px;
+  /* fixed width, no grow/shrink */
+  height: 225px;
+  /* 16:9 aspect ratio */
+}
+
+/* Video thumbnail styling */
+.video-thumb {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+  display: block;
+}
+
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Play button - centered circle */
+.video-thumb .play-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  font-size: 22px;
+  line-height: 1;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
+}
+
+/* When the iframe is in place, constrain it */
+.video-thumb iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* Food info section */
+.food-info {
+  flex: 1;
+  /* takes remaining space */
+}
+
+.food-info h2 {
+  margin: 0 0 .4rem;
+  color: #000000;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .food-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .video-wrapper {
+    flex: none;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .food-card {
+    opacity: 1;
+    transform: none !important;
+    transition: none;
+  }
+}
+
+/* Thailand's hero image (keeps shared hero styling) */
+.hero-section {
+  background: url("images/thailand.jpg") center/cover no-repeat;
+}
+
+/* ================= Eaten state for Thailand ================= */
+.food-card.eaten {
+  position: relative;
+  border: 2px solid #198754;
+  border-radius: 12px;
+  padding: 8px;
+  opacity: 0.9;
+}
+
+/* Small badge */
+.food-card.eaten::after {
+  content: "✓ Eaten";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #198754;
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  z-index: 2;
+}
+
+/* Eaten Before section styling */
+#eaten-section-th {
+  border-top: 2px dashed #e9ecef;
+  padding-top: 16px;
+  margin-top: 20px;
+}
+
+#eaten-list-th li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+}
+
+#eaten-list-th li:first-child {
+  cursor: default;
+}
+
+/* YouTube link styling */
+.youtube-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.youtube-link:hover {
+  text-decoration: underline;
+}
+
+/* ===================== Shared: CSS Variables ===================== */
+:root {
+  --ring: rgba(0, 0, 0, 0.06);
+  --accent: #111111;
+}
+
+/* ===================== Shared: Reset / Box Sizing ===================== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===================== Shared: Document / Root Elements ===================== */
+html,
+body {
+  height: 100%;
+}
+
+/* ===================== Shared: Base Body Styles ===================== */
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--ink);
+  background: linear-gradient(180deg, #fbfbfd 0%, var(--bg) 100%);
+}
+
+/* ===================== Shared: Headings ===================== */
+.heading-title {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .2px;
+}
+
+/* ===================== Shared: Brand Mark (Navbar) ===================== */
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: #111;
+  color: #fff;
+  font-weight: 700;
+  margin-right: .4rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .12);
+}
+
+/* ===================== Shared: Layout Containers ===================== */
+.container {
+  max-width: 1100px;
+}
+
+.content-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ===================== Shared: Footer ===================== */
+footer {
+  background: #fff9;
+  backdrop-filter: saturate(180%) blur(6px);
+}
+
+/* ===================== Shared: Image Credit Links (Global) ===================== */
+.image-credit a {
+  color: #666;
+  text-decoration: none;
+}
+
+.image-credit a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* ===================== Shared: Hero Section (layout + overlay + text) ===================== */
+.hero-section {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Dark overlay for readability */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-section h1,
+.hero-section p {
+  position: relative;
+  /* so text is above overlay */
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
