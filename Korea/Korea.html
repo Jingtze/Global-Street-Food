@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korea Street Food</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="KoreaStyles.css">
+
+</head>
+
+<body>
+    <!-- Narvigation bar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../homepage/index.html">
+                <span class="brand-mark">SF</span> Street Food Delight
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+                aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link " href="../Malaysia/Malaysia.html">🇲🇾 Malaysia</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../Korea/Korea.html">🇰🇷 Korea</a></li>
+                    <li class="nav-item"><a class="nav-link " href="../Vietnam/index.html">🇻🇳 Vietnam</a></li>
+                    <li class="nav-item"><a class="nav-link " href="../Japan/japan.html">🇯🇵 Japan</a></li>
+                    <li class="nav-item"><a class="nav-link  " href="../Thailand/thailand.html">🇹🇭 Thailand</a></li>
+                    <li class="nav-item"><a class="nav-link  " href="../China/china.html">🇨🇳 China</a></li>
+                    <li class="nav-item"><a class="nav-link " href="../France/france.html">🇫🇷 France</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER SECTION -->
+    <header class="header" id="top">
+        <div class="header-text">
+            <h1 class="fw-bold">Korea Street Food</h1>
+            <p class="fw-light">Click on a food to learn more!</p>
+        </div>
+        <div class="header-img-source">
+            Picture Source: <a
+                href="https://lokafy.com/blog/where-locals-eat-seoul-5-must-try-foods-dongdaemun-night-market"
+                target="_blank">Lokafy</a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="food-wrapper">
+
+        <!-- Kimbap -->
+        <div class="food-item" onclick="toggleDetails(this)">
+            <h2 class="fw-semibold">Kimbap</h2>
+            <div class="food-details">
+                <p class="text-muted fs-6">Kimbap is a popular Korean street food. It consists of rice wrapped in
+                    seaweed and filled with various ingredients, such as pickled radish, carrots, cucumbers, spinach,
+                    and sometimes eggs, beef, or crab meat. The Kimbap is cut into bite-sized pieces for easy
+                    eating.<br><br>
+
+                    Kimbap, with its light and colorful flavor, is often enjoyed as a quick snack or light meal. Found
+                    at street stalls, markets, and convenience stores, it is one of the most accessible and popular
+                    foods in Korean street food culture.
+                </p>
+                <img src="Korea_street_food/Kimbap.webp" alt="Kimbap" class="food-img">
+                <p class="img-source">Picture Source: <a
+                        href="https://medium.com/@KKdayIntl/korea-seoul-streetfood-guide-dc5b2d65ca3d"
+                        target="_blank">Medium</a></p>
+                <a href="https://www.youtube.com/watch?v=sC-gDNA8YJ8" target="_blank" class="video-link">Watch the
+                    production video</a><br>
+
+                <div class="food-select">
+                    <label>
+                        <input type="checkbox" class="food-checkbox" value="Kimbap">
+                        Want to try
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tteikbokki -->
+        <div class="food-item" onclick="toggleDetails(this)">
+            <h2 class="fw-semibold">Tteokbokki</h2>
+            <div class="food-details">
+                <p class="text-muted fs-6">Tteokbokki is one of Korea's most popular street snacks. It consists of chewy
+                    rice cakes cooked in a spicy sauce called gochujang. It's often served with fish cakes, a boiled
+                    egg, and chopped green onions.<br><br>
+
+                    Tteokbokki is ubiquitous at street stalls and markets, and is a popular snack for all ages. Its rich
+                    red color and addictive taste have made it a symbol of Korean street food culture.
+                </p>
+                <img src="Korea_street_food/Tteokbokki.webp" alt="Tteokbokki" class="food-img">
+                <p class="img-source">Picture Sourc: <a
+                        href="https://www.sweetandtastytv.com/blog/2014/04/23/31-street-foods-in-korea#google_vignette"
+                        target="_blank">SweetandtastyTV</a></p>
+                <a href="https://www.youtube.com/watch?v=3yzmfO0DJm0" target="_blank" class="video-link">Watch the
+                    production video</a><br>
+
+                <div class="food-select">
+                    <label>
+                        <input type="checkbox" class="food-checkbox" value="Tteokbokki">
+                        Want to try
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Eomuk -->
+        <div class="food-item" onclick="toggleDetails(this)">
+            <h2 class="fw-semibold">Eomuk</h2>
+            <div class="food-details">
+                <p class="text-muted fs-6">Eomuk is a common street food in Korea, especially popular in winter. Made
+                    from minced fish mixed with starch and seasonings, it's sliced or skewered and cooked in
+                    broth.<br><br>
+
+                    It's often served in a hot broth, combining the delicious, chewy texture of the fish cake with the
+                    warming, flavorful broth. As an affordable and quick snack, eomuk is a popular delicacy at street
+                    stalls and night markets across South Korea.
+                </p>
+                <img src="Korea_street_food/Eomuk.webp" alt="Eomuk" class="food-img">
+                <p class="img-source">Picture Source: <a href="https://creatrip.com/en/blog/8855"
+                        target="_blank">SweetandtastyTV</a>
+                </p>
+                <a href="https://www.youtube.com/watch?v=uiDX9voTzxE" target="_blank" class="video-link">Watch the
+                    production video</a><br>
+
+                <div class="food-select">
+                    <label>
+                        <input type="checkbox" class="food-checkbox" value="Eomuk">
+                        Want to try
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bungeoppang -->
+        <div class="food-item" onclick="toggleDetails(this)">
+            <h2 class="fw-semibold">Bungeoppang</h2>
+            <div class="food-details">
+                <p class="text-muted fs-6">Bungeoppang is a popular Korean street food dessert shaped like a fish. It's
+                    made from a fluffy batter baked in a mold and typically filled with red bean paste, though
+                    variations include cream, chocolate, and cheese.<br><br>
+
+                    With its crispy exterior and sweet filling, it's often sold like hotcakes on the streets during
+                    winter, bringing warmth and satisfaction. As one of Korea's most iconic street snacks, bungeoppang
+                    is beloved by people of all ages.
+                </p>
+                <img src="Korea_street_food/Bungeoppang.jpg" alt="Bungeoppang" class="food-img">
+                <p class="img-source">Picture Source: <a href="https://www.tasteatlas.com/bungeoppang"
+                        target="_blank">tasteatlas</a>
+                </p>
+                <a href="https://www.youtube.com/watch?v=hna6v8ck8do" target="_blank" class="video-link">Watch the
+                    production video</a><br>
+
+                <div class="food-select">
+                    <label>
+                        <input type="checkbox" class="food-checkbox" value="Bungeoppang">
+                        Want to try
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sundae -->
+        <div class="food-item" onclick="toggleDetails(this)">
+            <h2 class="fw-semibold">Sundae</h2>
+            <div class="food-details">
+                <p class="text-muted fs-6">Sundae is a common street food in South Korea. It's typically made with pig
+                    intestines, filled with vermicelli noodles, glutinous rice, vegetables, and sometimes pig's blood or
+                    other seasonings. It's then steamed or boiled and sliced before being eaten.<br><br>
+
+                    Sundae has a soft, chewy taste and a unique flavour, often enjoyed with chili powder, salt, or a
+                    dipping sauce. Sundae stalls are a common sight in markets and night markets across South Korea and
+                    are a beloved traditional snack.
+                </p>
+                <img src="Korea_street_food/Bungeoppang.jpg" alt="Bungeoppang" class="food-img">
+                <p class="img-source">Picture Source: <a href="https://www.yourlocalsguide.com/korean-street-food/"
+                        target="_blank">Your Local's Guide</a>
+                </p>
+                <a href="https://www.youtube.com/watch?v=fOyoERNz2M8&t=23s" target="_blank" class="video-link">Watch the
+                    production video</a><br>
+
+                <div class="food-select">
+                    <label>
+                        <input type="checkbox" class="food-checkbox" value="Sundae">
+                        Want to try
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Twigim -->
+        <div class="food-item" onclick="toggleDetails(this)">
+            <h2 class="fw-semibold">Twigim</h2>
+            <div class="food-details">
+                <p class="text-muted fs-6">Twigim (Korean fried food) is one of the most common street food in Korea,
+                    serving as the Korean version of tempura. It consists of a variety of ingredients coated in batter
+                    and deep-fried, including vegetables, nori rolls, sweet potatoes, squid, and dumplings. The result
+                    is a crispy exterior while retaining the flavorful texture of the ingredients.<br><br>
+
+                    Twigim is often enjoyed with a dipping sauce like gochujang or soy sauce, and is often served
+                    alongside stir-fried rice cakes (tteokbokki). It is a popular combination at Korean night markets
+                    and roadside stalls.
+                </p>
+                <img src="Korea_street_food/Twigim.png" alt="Twigim" class="food-img">
+                <p class="img-source">Picture Source: <a
+                        href="https://theinquiringtravelersnotebook.com/2017/08/11/deep-fry-sauce-and-rainbow-sweets-the-street-food-of-seoul-south-korea/"
+                        target="_blank">The Inquiring Traveler's Notebook</a>
+                </p>
+                <a href="https://www.youtube.com/watch?v=j0uhZiYnRPE" target="_blank" class="video-link">Watch the
+                    production video</a><br>
+
+                <div class="food-select">
+                    <label>
+                        <input type="checkbox" class="food-checkbox" value="Twigim">
+                        Want to try
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dak-kkochi -->
+        <div class="food-item" onclick="toggleDetails(this)">
+            <h2 class="fw-semibold">Dak-kkochi</h2>
+            <div class="food-details">
+                <p class="text-muted fs-6">Dak-kkochi (chicken skewers) is a popular street food in South Korea. It
+                    features chicken pieces skewered on bamboo skewers, grilled over a teppanyaki grill or charcoal
+                    grill, and then basted with a sweet and spicy sauce or soy sauce. The result is a juicy and
+                    delicious dish.<br><br>
+
+                    The lightly charred taste of the chicken complements the sweet, spicy, or savory flavors of the
+                    sauce, creating a truly mouthwatering meal. As a classic street food that can be found at Korean
+                    night markets and street vendors, dak-kkochi is a popular choice for on-the-go snacks, gatherings,
+                    and late-night snacks.
+
+                </p>
+                <img src="Korea_street_food/Dak-kkochi.jpg" alt="Dak-kkochi" class="food-img">
+                <p class="img-source">Picture Source: <a href="https://www.willflyforfood.net/korean-street-food/"
+                        target="_blank">Luca Sartor</a>
+                </p>
+                <a href="https://www.youtube.com/watch?v=vLXXgaqy3x8" target="_blank" class="video-link">Watch the
+                    production video</a><br>
+
+                <div class="food-select">
+                    <label>
+                        <input type="checkbox" class="food-checkbox" value="Dak-kkochi">
+                        Want to try
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mandu -->
+        <div class="food-item" onclick="toggleDetails(this)">
+            <h2 class="fw-semibold">Mandu</h2>
+            <div class="food-details">
+                <p class="text-muted fs-6">Mandu, a traditional Korean snack, is a favorite on roadside stalls and
+                    market. Made with thin dough wrapped around fillings such as pork, beef, kimchi, tofu, vermicelli
+                    noodles, or vegetables, mandu can be steamed, boiled, pan-fried, or deep-fried.<br><br>
+
+                    Mandu offers a variety of tastes and fillings, often served with a dipping sauce made from soy
+                    sauce, vinegar, and chili powder. A classic delicacy served at street vendors and festive tables,
+                    mandu not only provides a satisfying meal but also reflects the diversity of Korean culinary
+                    culture.
+
+                </p>
+                <img src="Korea_street_food/Mandu.webp" alt="Mandu" class="food-img">
+                <p class="img-source">Picture Source: <a href="https://lucasartor.com/en/korean-streetfood/"
+                        target="_blank">Will Fly For Food</a>
+                </p>
+                <a href="https://www.youtube.com/watch?v=T-QjisxwM90&t=483s" target="_blank" class="video-link">Watch
+                    the production video</a><br>
+
+                <div class="food-select">
+                    <label>
+                        <input type="checkbox" class="food-checkbox" value="Mandu">
+                        Want to try
+                    </label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="selectedFoodsSection" class="selected-foods container">
+        <h3>Wish list: Food that want to try!</h3>
+        <ul id="selectedFoodsList"></ul>
+    </div>
+
+    <!-- Bootstrap Go to Top Button -->
+    <button type="button" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle shadow scroll-to-top"
+        onclick="scrollToTop()" id="scrollBtn" style="width: 55px; height: 55px; z-index: 1000;" title="Go to top">
+        <i class="bi bi-arrow-up fs-5"></i>
+    </button>
+
+    <footer class="footer">
+        <p>&copy; 2025 Street Food Delight | All Rights Reserved</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="KoreaJavaScript.js"></script>
+
+</body>
+
+</html>
