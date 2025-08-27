@@ -1,0 +1,246 @@
+/* ===================== Content (Japan): Food Cards ===================== */
+.food-card {
+  border: 1px solid var(--ring);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--card);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .06);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .10);
+}
+
+.food-img {
+  height: 260px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+.card-text {
+  color: var(--ink);
+  opacity: .85;
+}
+
+/* ===================== Content (Japan): Ingredient List ===================== */
+.ingredients {
+  margin-top: .5rem;
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.ingredients .ing {
+  position: relative;
+  display: inline-block;
+  /* ensure tooltip positions relative to the word */
+  margin-left: .5rem;
+  margin-right: .25rem;
+  cursor: pointer;
+  color: #111;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}
+
+/* ===================== Content (Japan): Tooltip Preview ===================== */
+.ing-preview {
+  position: absolute;
+  z-index: 20;
+  width: 180px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--ring);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .18);
+  background: #fff;
+
+  /* place ABOVE the word, centered */
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+}
+
+.ing-preview img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+.ing-preview .cap {
+  padding: .35rem .5rem;
+  font-size: .75rem;
+  text-align: center;
+  color: #555;
+  background: #fff;
+}
+
+/* ===================== Content (Japan): Card Image Hover (Zoom) ===================== */
+.food-card img {
+  transition: transform 0.3s ease;
+}
+
+.food-card img:hover {
+  transform: scale(1.05);
+}
+
+/* ===================== Content (Japan): Animations (Used by list items) ===================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.list-group-item {
+  animation: fadeIn 0.5s ease;
+}
+
+/* ===================== Content (Japan): Mobile Tweaks ===================== */
+@media (max-width: 576px) {
+  .food-img {
+    height: 220px;
+  }
+
+  .ingredients {
+    font-size: .92rem;
+  }
+}
+
+.hero-section {
+  background: url("images/japan.jpg") center/cover no-repeat;
+}
+
+/* Eaten state for food cards */
+.food-card.eaten {
+  border: 2px solid green;
+  opacity: 0.9;
+}
+
+.food-card.eaten::after {
+  content: "✓ Eaten";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: green;
+  color: white;
+  padding: 2px 6px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Eaten Before section */
+#eaten-section h2 {
+  color: #333;
+}
+
+#eaten-list li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #444;
+}
+
+/* ===================== Shared: CSS Variables ===================== */
+:root {
+  --ring: rgba(0, 0, 0, 0.06);
+  --accent: #111111;
+}
+
+/* ===================== Shared: Reset / Box Sizing ===================== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===================== Shared: Document / Root Elements ===================== */
+html,
+body {
+  height: 100%;
+}
+
+/* ===================== Shared: Base Body Styles ===================== */
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--ink);
+  background: linear-gradient(180deg, #fbfbfd 0%, var(--bg) 100%);
+}
+
+/* ===================== Shared: Headings ===================== */
+.heading-title {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .2px;
+}
+
+/* ===================== Shared: Brand Mark (Navbar) ===================== */
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: #111;
+  color: #fff;
+  font-weight: 700;
+  margin-right: .4rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .12);
+}
+
+/* ===================== Shared: Layout Containers ===================== */
+.container {
+  max-width: 1100px;
+}
+
+.content-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ===================== Shared: Footer ===================== */
+footer {
+  background: #fff9;
+  backdrop-filter: saturate(180%) blur(6px);
+}
+
+/* ===================== Shared: Image Credit Links (Global) ===================== */
+.image-credit a {
+  color: #666;
+  text-decoration: none;
+}
+
+.image-credit a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* ===================== Shared: Hero Section (layout + overlay + text) ===================== */
+.hero-section {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Dark overlay for readability */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-section h1,
+.hero-section p {
+  position: relative; /* so text is above overlay */
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}

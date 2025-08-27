@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Japan Street Food – Gallery</title>
+
+    <!-- Fonts -->
+    <link href="fonts.css" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- Site styles -->
+    <link rel="stylesheet" href="japanStyles.css" />
+
+</head>
+
+<body>
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../homepage/index.html">
+                <span class="brand-mark">SF</span> Street Food Delight
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+                aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link " href="../Malaysia/Malaysia.html">🇲🇾 Malaysia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Korea/Korea.html">🇰🇷 Korea</a></li>
+                    <li class="nav-item"><a class="nav-link " href="../Vietnam/index.html">🇻🇳 Vietnam</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../Japan/japan.html">🇯🇵 Japan</a></li>
+                    <li class="nav-item"><a class="nav-link  " href="../Thailand/thailand.html">🇹🇭 Thailand</a></li>
+                    <li class="nav-item"><a class="nav-link  " href="../China/china.html">🇨🇳 China</a></li>
+                    <li class="nav-item"><a class="nav-link " href="../France/france.html">🇫🇷 France</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center text-white">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Japan Street Food</h1>
+            <p class="lead">Discover authentic flavors of Japan, from crispy takoyaki to fluffy okonomiyaki.</p>
+        </div>
+    </header>
+
+
+    <!-- Main Content (centered, fixed max-width) -->
+    <div class="container my-5">
+        <div class="content-wrap">
+            <br>
+            <!-- Cards grid -->
+            <div class="row g-4">
+                <!-- 1 Takoyaki -->
+                <div class="col-12 col-md-6">
+                    <article class="food-card card h-100">
+                        <img class="card-img-top food-img" src="images/takoyaki.jpg" alt="Takoyaki" />
+                        <div class="card-body">
+                            <h3 class="card-title">Takoyaki</h3>
+                            <p class="card-text">Crisp-outside, custardy-inside batter balls with octopus, finished with
+                                sauce, mayo, and bonito flakes.</p>
+                            <div class="ingredients">Main ingredients:
+                                <span class="ing" data-img="images/octopus.jpg">Octopus</span>
+                                <span class="ing" data-img="images/batter.jpg">Batter</span>
+                                <span class="ing" data-img="images/Bonito_flakes.jpg">Bonito
+                                    flakes</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- 2 konomiyaki -->
+                <div class="col-12 col-md-6">
+                    <article class="food-card card h-100">
+                        <img class="card-img-top food-img" src="images/Okonomiyaki1.jpg"
+                            alt="Okonomiyaki by ume-y (CC BY 2.0)" />
+                        <div class="card-body">
+                            <h3 class="card-title">Okonomiyaki</h3>
+                            <p class="card-text">Savory cabbage pancake griddled and finished with tangy sauce, mayo,
+                                and seaweed flakes.</p>
+                            <div class="ingredients">Main ingredients:
+                                <span class="ing" data-img="images/cabbage.jpg">Cabbage</span>
+                                <span class="ing" data-img="images/pork_belly.jpg">Pork
+                                    belly</span>
+                                <br>
+                                <span class="ing" data-img="images/sauce.jpg">Okonomiyaki sauce</span>
+                            </div>
+                            <p class="image-credit" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                                Photo: <a href="https://www.flickr.com/photos/ume-y/8070788366/"
+                                    target="_blank">ume-y</a>
+                                (<a href="https://creativecommons.org/licenses/by/2.0" target="_blank">CC BY 2.0</a>),
+                                via <a href="https://commons.wikimedia.org/w/index.php?curid=117790028"
+                                    target="_blank">Wikimedia Commons</a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <!-- 3 Taiyaki -->
+                <div class="col-12 col-md-6">
+                    <article class="food-card card h-100">
+                        <img class="card-img-top food-img" src="images/Taiyaki.jpg" alt="Taiyaki" />
+                        <div class="card-body">
+                            <h3 class="card-title">Taiyaki</h3>
+                            <p class="card-text">Fish-shaped pastry filled with red bean paste, custard, or chocolate.
+                            </p>
+                            <div class="ingredients">Main ingredients:
+                                <span class="ing" data-img="images/flour.jpg">flour</span>
+                                <span class="ing" data-img="images/sugar.jpg">sugar</span>
+                                <span class="ing" data-img="images/egg.jpg">egg</span>
+                                <span class="ing" data-img="images/milk.jpg">milk</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- 4 Yakisoba -->
+                <div class="col-12 col-md-6">
+                    <article class="food-card card h-100">
+                        <img class="card-img-top food-img" src="images/Yakisoba.jpg" alt="Yakisoba" />
+                        <div class="card-body">
+                            <h3 class="card-title">Yakisoba</h3>
+                            <p class="card-text">Wok-tossed noodles with pork and cabbage in a sweet–savory sauce.</p>
+                            <div class="ingredients">Main ingredients:
+                                <span class="ing" data-img="images/wheat_noodle.jpg">Wheat
+                                    noodles</span>
+                                <span class="ing" data-img="images/pork_belly.jpg">Pork</span>
+                                <span class="ing" data-img="images/cabbage.jpg">Cabbage</span>
+                            </div>
+                            <p class="image-credit" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                                Photo: <a href="https://commons.wikimedia.org/w/index.php?curid=48603227"
+                                    target="_blank">Tokumeigakarinoaoshima</a>
+                                (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA
+                                    4.0</a>),
+                                via <a
+                                    href="https://commons.wikimedia.org/wiki/File:Nagata_Honjoken_Bokkake_Yakisoba.jpg"
+                                    target="_blank">Wikimedia Commons</a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <!-- 5 Dango -->
+                <div class="col-12 col-md-6">
+                    <article class="food-card card h-100">
+                        <img class="card-img-top food-img" src="images/Dango.jpg" alt="Dango" />
+                        <div class="card-body">
+                            <h3 class="card-title">Dango</h3>
+                            <p class="card-text">Chewy rice dumplings on a skewer, often glazed with sweet soy
+                                (mitarashi).</p>
+                            <div class="ingredients">Main ingredients:
+                                <span class="ing" data-img="images/rice_flour.jpg">Rice
+                                    flour</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- 6 Ikayaki -->
+                <div class="col-12 col-md-6">
+                    <article class="food-card card h-100">
+                        <img class="card-img-top food-img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/9/90/Ikayaki_%287629347178%29.jpg"
+                            alt="Ikayaki (grilled squid) by suri (CC BY-SA 2.0)" />
+                        <div class="card-body">
+                            <h3 class="card-title">Ikayaki</h3>
+                            <p class="card-text">Whole squid brushed with soy, grilled until smoky and tender.</p>
+                            <div class="ingredients">Main ingredients:
+                                <span class="ing" data-img="images/squid.jpg">Squid</span>
+                                <span class="ing" data-img="images/soy_sauce.jpg">Soy
+                                    sauce</span>
+                            </div>
+                            <p class="image-credit" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                                Photo: <a href="https://www.flickr.com/photos/8415914@N04/7629347178"
+                                    target="_blank">suri</a>
+                                (<a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC BY-SA
+                                    2.0</a>),
+                                via <a href="https://commons.wikimedia.org/w/index.php?curid=21185884"
+                                    target="_blank">Wikimedia Commons</a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <!-- 7 Kakigori -->
+                <div class="col-12 col-md-6">
+                    <article class="food-card card h-100">
+                        <img class="card-img-top food-img" src="images/Kakigōri.jpg" alt="Kakigōri" />
+                        <div class="card-body">
+                            <h3 class="card-title">Kakigōri</h3>
+                            <p class="card-text">Feathery shaved ice crowned with syrups, fruit, and sometimes condensed
+                                milk.</p>
+                            <div class="ingredients">Main ingredients:
+                                <span class="ing" data-img="images/ice.jpg">Ice</span>
+                                <span class="ing" data-img="images/condensed_milk.jpg">Condensed
+                                    milk</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- 8 Korokke -->
+                <div class="col-12 col-md-6">
+                    <article class="food-card card h-100">
+                        <img class="card-img-top food-img" src="images/Korokke.jpg" alt="Korokke" />
+                        <div class="card-body">
+                            <h3 class="card-title">Korokke</h3>
+                            <p class="card-text">Panko-crumbed croquettes—usually mashed potato—fried to a golden
+                                crunch.</p>
+                            <div class="ingredients">Main ingredients:
+                                <span class="ing" data-img="images/potato.jpg">Potato</span>
+                                <span class="ing" data-img="images/panko.jpg">Panko</span>
+                            </div>
+                            <p class="image-credit" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                                Photo: <a href="https://commons.wikimedia.org/w/index.php?curid=1019685594"
+                                    target="_blank">
+                                    円周率３パーセント
+                                </a>
+                                (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+                                    CC BY-SA 4.0
+                                </a>), via Wikimedia Commons
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <!-- 9 Yaki Tomorokoshi -->
+                <div class="col-12 col-md-6">
+                    <article class="food-card card h-100">
+                        <img class="card-img-top food-img" src="images/YakiTomorokoshi.jpg" alt="Yaki Tomorokoshi" />
+                        <div class="card-body">
+                            <h3 class="card-title">Yaki Tomorokoshi</h3>
+                            <p class="card-text">Charred corn on the cob brushed with soy butter—sweet, smoky,
+                                irresistible.</p>
+                            <div class="ingredients">Main ingredients:
+                                <span class="ing" data-img="images/corn.jpg">Corn</span>
+                                <span class="ing" data-img="images/butter.jpg">Butter</span>
+                                <span class="ing" data-img="images/soy_sauce.jpg">Soy
+                                    sauce</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- 10 Imagawayaki -->
+                <div class="col-12 col-md-6">
+                    <article class="food-card card h-100">
+                        <img class="card-img-top food-img" src="images/Imagawayaki.jpeg" alt="Imagawayaki" />
+                        <div class="card-body">
+                            <h3 class="card-title">Imagawayaki</h3>
+                            <p class="card-text">Thick round pancake with molten sweet fillings like adzuki or custard.
+                            </p>
+                            <div class="ingredients">Main ingredients:
+                                <span class="ing" data-img="images/red_bean.jpg">Adzuki
+                                    beans</span>
+                                <span class="ing" data-img="images/batter.jpg">Batter</span>
+                            </div>
+                            <p class="image-credit" style="font-size: 0.8rem; margin-top: 0.5rem;">
+                                Photo: <a href="https://commons.wikimedia.org/w/index.php?curid=Gozasoro"
+                                    target="_blank">Tomomarusan</a>
+                                (<a href="https://creativecommons.org/licenses/by/2.5/" target="_blank">CC BY 2.5</a>),
+                                via <a href="https://commons.wikimedia.org/wiki/File:Gozasoro.JPG"
+                                    target="_blank">Wikimedia
+                                    Commons</a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Eaten Before Section -->
+            <section id="eaten-section" class="container my-4">
+                <h2 class="text-center mb-3" style="font-family: 'Playfair Display', serif; font-weight: 700;">
+                    Eaten Before<br>(Double click the food)
+                </h2>
+                <ul id="eaten-list" class="list-group text-center">
+                    <li class="list-group-item">Not eaten yet</li>
+                </ul>
+            </section>
+
+
+            <!-- Home / Top -->
+            <div class="d-flex justify-content-between align-items-center pt-4">
+                <a class="btn btn-dark" href="../homepage/index.html">Home</a>
+                <button id="backToTop" class="btn btn-dark">Top</button>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <footer class="border-top py-4">
+        <div class="container text-center small text-muted">&copy; 2025 Street Food Delight | All Rights Reserved</div>
+    </footer>
+
+    <!-- jQuery (used for mobile-friendly ingredient toggles) -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <!-- Site script -->
+    <script src="japanScript.js"></script>
+</body>
+
+</html>
