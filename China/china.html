@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>China Street Food</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap Bundle JS (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Site styles -->
+  <link rel="stylesheet" href="china.css" />
+</head>
+
+<body data-country="China">
+  <!-- Sticky Navbar-->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../homepage/index.html">
+        <span class="brand-mark">SF</span> Street Food Delight
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link " href="../Malaysia/Malaysia.html">🇲🇾 Malaysia</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Korea/Korea.html">🇰🇷 Korea</a></li>
+          <li class="nav-item"><a class="nav-link " href="../Vietnam/index.html">🇻🇳 Vietnam</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Japan/japan.html">🇯🇵 Japan</a></li>
+          <li class="nav-item"><a class="nav-link  " href="../Thailand/thailand.html">🇹🇭 Thailand</a></li>
+          <li class="nav-item"><a class="nav-link  active" href="../China/china.html">🇨🇳 China</a></li>
+          <li class="nav-item"><a class="nav-link " href="../France/france.html">🇫🇷 France</a></li>
+          <li class="nav-item"> <button id="themeToggle" class="btn btn-sm btn-outline-secondary ms-3">Dark
+              Mode</button> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1 class="display-4 fw-bold">China Street Food</h1>
+    <p>Discover 10 amazing dishes from the streets of China</p>
+  </section>
+
+  <!-- Food List -->
+  <section class="food-list">
+    <div class="food-item hidden"> <img src="images/Jian-Bing-Chinese-Crepes-3-scaled.jpg" alt="Jianbing">
+      <div class="food-content">
+        <h2 class="fw-bold">Jianbing (煎饼)</h2>
+        <p>A popular Chinese crepe, often considered as favorite Chinese street food, especially for breakfast.</p>
+        <div class="extra-desc">Jianbing, one of the most popular breakfast street food, often eaten on the go - It
+          consists
+          of a thin crepe batter, egg, garnishes like black sesame seeds and chopped scallions, fried dough sticks which
+          they called BaoCui, sweet and savory bean sauce, and other optional fillings like bacon.</div>
+        <span class="img-source">📷 Source: <a href="https://redhousespice.com/jian-bing-chinese-crepes/"
+            target="_blank" rel="noopener noreferrer">
+            Red House Spice
+          </a></span>
+      </div>
+    </div>
+
+    <div class="food-item hidden"> <img src="images/Chou_dou_fu.jpg" alt="Stinky Tofu">
+      <div class="food-content">
+        <h2 class="fw-bold">Stinky Tofu (臭豆腐)</h2>
+        <p>Fermented tofu with a strong smell but rich, addictive flavor.</p>
+        <div class="extra-desc">Stinky tofu, one of China's most iconic street foods - Despite for its strong smell,
+          yet people still loved for its crispy outside and soft, flavorful inside. Fermented in a special brine, the
+          tofu develops a bold flavor that pairs perfectly with chili sauce, garlic, and pickled vegetables. Many say
+          that the the stronger the smell are, the better the tofu is. </div>
+        <span class="img-source">📷 Source: <a href="https://www.chinesefoodwiki.org/Stinky_Tofu" target="_blank"
+            rel="noopener noreferrer">Chinese Food Wiki</a></span>
+      </div>
+    </div>
+
+    <div class="food-item hidden"> <img src="images/xiaolongbao.jpg" alt="Xiaolongbao">
+      <div class="food-content">
+        <h2 class="fw-bold">Xiaolongbao (小笼包)</h2>
+        <p>Delicate steamed dumplings filled with juicy pork and rich, savory broth.</p>
+        <div class="extra-desc">Xiaolongbao, Originating from Shanghai - These famous soup dumplings are eaten carefully
+          to avoid
+          spilling the hot soup inside. A small bite releases the flavorful broth before enjoying the tender meat
+          filling.</div>
+        <span class="img-source">📷 Source: <a href="https://www.tasteatlas.com/xiaolongbao/recipe" target="_blank"
+            rel="noopener noreferrer">tasteatlas</a>
+        </span>
+      </div>
+    </div>
+
+    <div class="food-item hidden"> <img src="images/chaunr.jpg" alt="Chuanr">
+      <div class="food-content">
+        <h2 class="fw-bold">Chuanr (串儿)</h2>
+        <p>Skewers of spiced meat, grilled over open flames for a smoky, savory flavor.</p>
+        <div class="extra-desc">Chaunr, a late-night street food favorite in northern Chin - Chuanr is often made with
+          lamb and
+          seasoned with cumin, chili, and sesame. Best enjoyed hot off the grill, usually with a cold drink.</div>
+        <span class="img-source">📷 Source: <a href="https://ltl-shanghai.com/chuanr/" target="_blank"
+            rel="noopener noreferrer">LTL</a></span>
+      </div>
+    </div>
+
+    <div class="food-item hidden"> <img src="images/baozi.jpg" alt="Baozi">
+      <div class="food-content">
+        <h2 class="fw-bold">Baozi (包子)</h2>
+        <p>Steamed buns with various fillings like pork, beef, or vegetables.</p>
+        <div class="extra-desc">Baozi, a staple breakfast across China - Baozi come with countless fillings such as
+          pork, beef, mushrooms, or red bean paste. Sold fresh in bamboo baskets, they’re a comforting and portable
+          street food..</div>
+        <span class="img-source">📷 Source: <a href="https://www.omeidachinese.com/how-to-make-baozi-steamed-buns/"
+            target="_blank" rel="noopener noreferrer">Omeida</a>
+        </span>
+      </div>
+    </div>
+
+    <div class="food-item hidden"> <img src="images/tanghulu.jpg" alt="Tanghulu">
+      <div class="food-content">
+        <h2 class="fw-bold">Tanghulu (糖葫芦)</h2>
+        <p>Skewered fruits or berries coated in hardened sugar syrup.</p>
+        <div class="extra-desc">Tanghulu, a famous street food that can be founded at every night market in China -
+          Traditionally made with hawthorn berries, tanghulu offers a crunchy, sweet, and tart bite. Nowadays,
+          strawberries, grapes, and even kiwi are used, making it a colorful favorite among children and adults.</div>
+        <span class="img-source">📷 Source: <a href="https://www.honestfoodtalks.com/tanghulu-recipe-candied-fruit/"
+            target="_blank" rel="noopener noreferrer">honestfoodtalks</a></span>
+      </div>
+    </div>
+
+    <div class="food-item hidden"> <img src="images/malatang.jpg" alt="Mala Tang">
+      <div class="food-content">
+        <h2 class="fw-bold">Malatang (麻辣烫)</h2>
+        <p>A spicy Sichuan-style hotpot where ingredients are cooked in numbing broth.</p>
+        <div class="extra-desc">Malatang, popular for its mix-and-match style of eating - Chooseable vegetables, meats,
+          and noodles
+          by customers are cooked in a numbing, spicy broth flavored with Sichuan peppercorns. .</div>
+        <span class="img-source">📷 Source: <a href="https://sorimmara.com/" target="_blank"
+            rel="noopener noreferrer">SORIMARA</a></span>
+      </div>
+    </div>
+
+    <div class="food-item hidden"> <img src="images/zongzi.jpg" alt="Zongzi">
+      <div class="food-content">
+        <h2 class="fw-bold">Zongzi (粽子)</h2>
+        <p>Sticky rice dumplings wrapped in bamboo leaves, often with savory or sweet fillings.</p>
+        <div class="extra-desc">Zongzi, traditionally eaten during the Dragon Boat Festival - Zongzi can be filled with
+          pork belly, salted egg yolk, or sweet red bean paste. The bamboo leaves give the rice a distinctive fragrance.
+        </div>
+        <span class="img-source">📷 Source: <a
+            href="https://asianinspirations.com.au/recipes/taiwanese-hakka-style-dough-dumplings-zongzi/"
+            target="_blank" rel="noopener noreferrer">asianinspirations</a></span>
+      </div>
+    </div>
+
+    <div class="food-item hidden"> <img src="images/roujiamo.jpg" alt="Roujiamo">
+      <div class="food-content">
+        <h2 class="fw-bold">Roujiamo (肉夹馍)</h2>
+        <p>Known as the “Chinese hamburger,” filled with stewed pork inside flatbread.</p>
+        <div class="extra-desc">Roujiamo, originates from Shaanxi province and is beloved across China - Known as the
+          “Chinese hamburger,” roujiamo originated in Shaanxi province. The slow-cooked meat, often shredded and
+          seasoned with spices, makes it one of the most beloved street snacks across China. </div>
+        <span class="img-source">📷 Source: <a
+            href="https://www.thefooddictator.com/the-hirshon-ultimate-xian-roujiamo-chinese-hamburgers-%E8%82%89%E5%A4%B9%E9%A6%8D/"
+            target="_blank" rel="noopener noreferrer">The Food Dictator</a></span>
+      </div>
+    </div>
+
+    <div class="food-item hidden"> <img src="images/chowmein.jpg" alt="Chow Mein">
+      <div class="food-content">
+        <h2 class="fw-bold">Chow Mein (炒面)</h2>
+        <p>Stir-fried noodles with vegetables, soy sauce, and sometimes meat.</p>
+        <div class="extra-desc">Chow Mein, a classic street food that has spread worldwide from China - Chow mein is
+          quick, filling, and flavorful. Its popularity has spread worldwide, with countless regional variations.</div>
+        <span class="img-source">📷 Source: <a
+            href="https://curatedkitchenware.com/blogs/soupeduprecipes/perfect-chow-mein-every-time-easy-stir-fried-noodles-recipe?srsltid=AfmBOoogLIc41yBuD9wifrmHweAEArRDTLFWDHd1lvGJSpgacIeZ7_EZ"
+            target="_blank" rel="noopener noreferrer">curatedkitchenware</a></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer-buttons">
+    <a href="../homepage/index.html" class="btn footer-btn">Home</a>
+    <a href="#top" id="backToTop" class="btn footer-btn">Top</a>
+  </div>
+
+  <!-- Copyright Footer -->
+  <footer class="border-top py-4">
+    <div class="container text-center small text-white" >
+      &copy; 2025 Street Food Delight | All Rights Reserved
+    </div>
+  </footer>
+
+  <script src="chinascript.js" defer></script>
+
+</body>
+</html>
