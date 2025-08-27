@@ -1,0 +1,186 @@
+ html, body {
+            height: 100%;
+        }
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header-custom {
+            background-color: #a02038;
+            color: #ffffff;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 15px 15px;
+        }
+        .main-content {
+            flex-grow: 1;
+        }
+        .container-custom {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .intro-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .footer-custom {
+            background-color: #333;
+            color: #ffffff;
+            padding: 20px 0;
+            border-radius: 15px 15px 0 0;
+            margin-top: 50px;
+        }
+        
+        .card-custom {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            height: 100%;
+        }
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 250px; /* Increased height for wider cards */
+            object-fit: cover;
+        }
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+        .food-item-img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .food-item-caption {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        /* Custom styles for the manual card slider */
+        .cards-slider-container {
+            position: relative;
+            overflow: hidden; 
+            padding: 0 50px; 
+            width: 100%; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            min-height: 400px; 
+        }
+        .cards-wrapper {
+            display: flex; 
+            transition: transform 0.5s ease-in-out; 
+        }
+        .cards-wrapper .col-custom-width {
+            flex-shrink: 0; 
+           
+            width: calc(50% - 20px); 
+            margin-right: 40px; 
+            padding: 15px; 
+            box-sizing: border-box; 
+        }
+        .cards-wrapper .col-custom-width:last-child {
+            margin-right: 0;
+        }
+        @media (max-width: 767.98px) {
+            .cards-wrapper .col-custom-width {
+                width: 100%; 
+                margin-right: 0; 
+            }
+            .cards-slider-container {
+                padding: 0; 
+            }
+        }
+
+        .slider-nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #a02038;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            line-height: 1;
+            transition: background-color 0.3s ease;
+        }
+        .slider-nav-button:hover:not(:disabled) {
+            background-color: #8c1c30;
+        }
+        .slider-nav-button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        .slider-nav-button.left {
+            left: 0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .slider-nav-button.right {
+            right: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .intro-text p {
+            font-size: 1.15em;
+            line-height: 1.6; 
+        }
+        .intro-text p strong {
+            font-size: 1.25em; 
+        }
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+.share-label {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.social-share-button {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white */
+    border: none;
+    border-radius: 50%; /* Circular buttons */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    margin: 0 auto; 
+}
+
+.social-share-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.social-share-button svg {
+    width: 22px;
+    height: 22px;
+    fill: white; /* White icons */
+}
