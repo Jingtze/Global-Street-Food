@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    overflow-x: hidden;
+    transition: background 0.3s, color 0.3s;
+}
+
+.hero-section {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    background: url("images/china.jpg") center/cover no-repeat;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    transition: background 0.3s;
+}
+
+.hero-section h1,
+.hero-section p {
+    position: relative;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease;
+}
+
+.hero-section p {
+    font-size: 22px;
+    animation: fadeInUp 1.2s ease;
+}
+
+body.dark .hero-section::before {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.food-list {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.food-item {
+    display: flex;
+    background: #fff;
+    margin: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 320px;
+}
+
+.food-item:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.food-item img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.food-content {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.food-content h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.food-content p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.extra-desc {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.food-item:hover .extra-desc {
+    max-height: 200px;
+    opacity: 1;
+}
+
+.food-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.img-source {
+    font-size: 12px;
+    color: #777;
+    margin-top: 8px;
+    display: block;
+    font-style: italic;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer a {
+    color: #f8d57e;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 800px;
+    margin: 20px 0;
+}
+
+body.dark .footer-btn {
+    background-color: #f8f9fa;
+    /* Light mode */
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+.footer-btn {
+    background-color: #222;
+    /* Dark mode */
+    color: #fff;
+    border: 1px solid #444;
+}
+
+/*Fade in for Hero Section*/
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .food-item {
+        flex-direction: column !important;
+        height: auto;          /* let it grow naturally */
+        min-height: auto;
+    }
+
+    .food-item img {
+        width: 100%;
+        height: auto;          /* prevent stretching */
+        max-height: 250px;     /* optional: limit image height */
+        object-fit: cover;
+    }
+
+    .food-content {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+}
+/* --- DARK THEME --- */
+body.dark {
+    background: #121212;
+    color: #eee;
+}
+
+body.dark .navbar {
+    background: #1e1e1e !important;
+}
+
+/* ✅ make navbar text white in dark mode */
+body.dark .navbar,
+body.dark .navbar a,
+body.dark .navbar-brand,
+body.dark .nav-link {
+    color: #fff !important;
+}
+
+body.dark .food-item {
+    background: #1e1e1e;
+    color: #eee;
+}
+
+body.dark footer {
+    background: #111;
+}
+
+body.dark footer a {
+    color: #ddd;
+}
+
+body.dark .hero-section::before {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+/* ===================== Brand Mark (Navbar) ===================== */
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: #111;
+  color: #fff;
+  font-weight: 700;
+  margin-right: .4rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .12);
+}
