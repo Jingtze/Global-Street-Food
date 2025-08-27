@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Street Food Login/Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="loginPage.css">
+</head>
+<body>
+    <header>
+        Global Street Food
+    </header>
+
+    <div class="country-showcase">
+        <h2>Explore the Street Food Around The World!</h2>
+        <div class="country-grid">
+            <div class="country-item">
+                <img src="Vietnam/images/image13.jfif" alt="Vietnam Street Food">
+                <span>Vietnam</span>
+            </div>
+            <div class="country-item">
+                <img src="China/images/baozi.jpg" alt="China Street Food">
+                <span>China</span>
+            </div>
+            <div class="country-item">
+                <img src="Japan/images/Imagawayaki.jpeg" alt="Japan Street Food">
+                <span>Japan</span>
+            </div>
+            <div class="country-item">
+                <img src="Malaysia/Malaysia_street_food/Nasi_Lemak.png" alt="Malaysia Street Food">
+                <span>Malaysia</span>
+            </div>
+            <div class="country-item">
+                <img src="Thailand/images/BoatNoodles.jpg" alt="Thailand Street Food">
+                <span>Thailand</span>
+            </div>
+            <div class="country-item">
+                <img src="France/images/beignets.jpg" alt="France Street Food">
+                <span>France</span>
+            </div>
+            <div class="country-item">
+                <img src="Korea/Korea_street_food/Bungeoppang.jpg" alt="Korea Street Food">
+                <span>Korea</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="form-container">
+            <!-- Login Form -->
+            <div id="loginSection">
+                <h1 class="form-title">Login to Your Account</h1>
+                <p class="tagline-text">Explore street food from around the world!</p>
+
+                <form id="loginForm">
+                    <input type="email" id="loginEmail" placeholder="Email Address" class="form-input" required>
+                    <input type="password" id="loginPassword" placeholder="Password" class="form-input" required>
+                    <button type="submit" class="action-button">Login</button>
+                </form>
+
+                <div id="loginMessage" class="message-box"></div>
+
+                <a href="#" id="showSignup" class="toggle-form-link">Don't have an account? Sign Up</a>
+                <!-- Forgot password link removed -->
+            </div>
+
+            <!-- Sign Up Form -->
+            <div id="signupSection" style="display: none;">
+                <h1 class="form-title">Create Your Account</h1>
+                <p class="tagline-text">Join us to discover delicious street food!</p>
+
+                <form id="signupForm">
+                    <input type="email" id="signupEmail" placeholder="Email Address" class="form-input" required>
+                    <input type="password" id="signupPassword" placeholder="Password" class="form-input" required>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" class="form-input" required>
+                    <button type="submit" class="action-button">Sign Up</button>
+                </form>
+
+                <div id="signupMessage" class="message-box"></div>
+
+                <a href="#" id="showLogin" class="toggle-form-link">Already have an account? Log In</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Street Food Delight | All Rights Reserved</p>
+    </footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="loginPage.js"></script>
+</body>
+</html>

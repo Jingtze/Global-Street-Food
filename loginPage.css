@@ -1,0 +1,227 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* Light gray background */
+            display: flex;
+            flex-direction: column; /* Arrange children vertically */
+            min-height: 100vh; /* Use min-height to allow content to push footer down */
+            margin: 0;
+            padding: 0; /* Remove body padding to allow header/footer full width */
+            box-sizing: border-box;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #a02038; /* Header background color */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Country showcase section styling */
+        .country-showcase {
+            background-color: #ffffff;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 2rem; /* Space between showcase and login/signup forms */
+        }
+
+        .country-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid columns */
+            gap: 1.5rem; /* Space between grid items */
+            max-width: 1000px; /* Max width for the grid */
+            margin: 0 auto; /* Center the grid */
+        }
+
+        .country-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+        }
+
+        .country-item img {
+            width: 80px; /* Fixed width for images */
+            height: 80px; /* Fixed height for images */
+            object-fit: cover; /* Cover the area, crop if necessary */
+            border-radius: 50%; /* Circular images */
+            margin-bottom: 0.5rem;
+            border: 2px solid #d97706; /* Orange border for images */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .country-item span {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #374151; /* Dark gray text */
+        }
+
+        /* Main content wrapper to center the forms */
+        .main-content {
+            flex-grow: 1; /* Allow main content to take up available space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem; /* Padding for the form containers */
+            box-sizing: border-box;
+        }
+
+        /* Form container styling (for both login and signup) */
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 1rem; /* Rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2.5rem; /* Increased padding */
+            max-width: 420px; /* Slightly wider */
+            width: 90%; /* Responsive width */
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* Form title styling */
+        .form-title {
+            color: #d97706; /* Warm orange for branding */
+            font-weight: 700;
+            font-size: 2.25rem; /* Larger font size */
+            margin-bottom: 1.5rem;
+        }
+
+        /* Paragraph styling below title */
+        .tagline-text {
+            color: #6b7280; /* Gray text */
+            margin-bottom: 1.5rem;
+        }
+
+        /* Form input styling */
+        .form-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #e2e8f0; /* Light gray border */
+            border-radius: 0.5rem; /* Rounded input fields */
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            box-sizing: border-box;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #d97706; /* Orange focus border */
+            box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.2); /* Soft orange shadow on focus */
+        }
+
+        /* Button styling */
+        .action-button {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background-color: #d97706; /* Warm orange button */
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            box-sizing: border-box;
+        }
+
+        .action-button:hover {
+            background-color: #b45309; /* Darker orange on hover */
+        }
+
+        .action-button:disabled {
+            background-color: #fca5a5; /* Lighter red for disabled state */
+            cursor: not-allowed;
+        }
+
+        /* Message box styling (for success/error) */
+        .message-box {
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            text-align: left;
+            display: none; /* Hidden by default */
+        }
+
+        .message-box.success {
+            background-color: #ecfdf5; /* Light green */
+            color: #047857; /* Darker green */
+            border: 1px solid #34d399;
+        }
+
+        .message-box.error {
+            background-color: #fef2f2; /* Light red */
+            color: #b91c1c; /* Darker red */
+            border: 1px solid #ef4444;
+        }
+
+        /* Toggle link styling */
+        .toggle-form-link {
+            font-size: 0.877rem;
+            color: #6b7280; /* Gray text */
+            margin-top: 1rem;
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .toggle-form-link:hover {
+            color: #d97706;
+            text-decoration: underline;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #a02038; /* Footer background color */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem; /* Added margin to push it further down */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.25rem;
+            }
+            .country-grid {
+                grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+                gap: 1rem;
+            }
+            .country-item img {
+                width: 60px;
+                height: 60px;
+            }
+            .country-item span {
+                font-size: 0.8rem;
+            }
+            .main-content {
+                padding: 0.5rem;
+            }
+            .form-container {
+                padding: 1.5rem;
+                width: 95%;
+            }
+            .form-title {
+                font-size: 1.75rem;
+            }
+            .form-input, .action-button {
+                font-size: 0.95rem;
+                padding: 0.65rem 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .country-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
