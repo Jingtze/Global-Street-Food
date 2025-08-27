@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>France Street Food</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Site styles -->
+  <link rel="stylesheet" href="france.css" />
+
+</head>
+
+<body data-country="french">
+  <!-- Sticky Navbar-->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../homepage/index.html">
+        <span class="brand-mark">SF</span> Street Food Delight
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link " href="../Malaysia/Malaysia.html">🇲🇾 Malaysia</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Korea/Korea.html">🇰🇷 Korea</a></li>
+          <li class="nav-item"><a class="nav-link " href="../Vietnam/index.html">🇻🇳 Vietnam</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Japan/japan.html">🇯🇵 Japan</a></li>
+          <li class="nav-item"><a class="nav-link  " href="../Thailand/thailand.html">🇹🇭 Thailand</a></li>
+          <li class="nav-item"><a class="nav-link  " href="../China/china.html">🇨🇳 China</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../France/france.html">🇫🇷 France</a></li>
+          <li class="nav-item"> <button id="themeToggle" class="btn btn-sm btn-outline-secondary ms-3">Dark
+              Mode</button> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-section">
+    <h1 class="display-4 fw-bold">France Street Food</h1>
+    <p>Discover 10 amazing dishes from the streets of France</p>
+  </section>
+
+  <!-- Food List -->
+  <section class="food-list">
+    <div class="food-row">
+      <div class="food-item hidden">
+        <img src="images/crepes.jpg" alt="Crêpes">
+        <div class="food-content">
+          <h2>Crêpes</h2>
+          <p>Thin pancakes with sweet or savory fillings</p>
+          <div class="extra-text">
+            A French classic often sold from street stalls, crêpes are paper-thin pancakes made from wheat or buckwheat
+            flour. Sweet versions may be filled with Nutella, sugar, lemon, fruits, or jam, while savory ones (called
+            galettes) often have cheese, ham, eggs, or vegetables. They’re folded into a neat triangle or rolled up for
+            easy eating on the go.
+          </div>
+          <span class="img-source">📷 Source: <a
+              href="https://www.nordicware.com/recipes/classic-crepes/?srsltid=AfmBOoqANxsGwiWCSqsNywAqFMtcFiG5yv-8YGepDVTDOtapzF4d1FDT"
+              target="_blank" rel="noopener noreferrer">NORDIC WARE</a> </span>
+        </div>
+      </div>
+
+      <div class="food-item right hidden">
+        <div class="food-content">
+          <h2>Galette-Saucisse</h2>
+          <p>A sausage wrapped in a buckwheat pancake</p>
+          <div class="extra-text">
+            Famous in Brittany, the galette-saucisse is a grilled pork sausage wrapped inside a buckwheat crêpe. It’s a
+            rustic yet delicious snack, similar to a hot dog but with French flair. The galette absorbs the sausage
+            juices, making it a satisfying handheld street food.
+          </div>
+          <span class="img-source">📷 Source: <a href="https://www.cuisineaz.com/recettes/galette-saucisse-108332.aspx"
+              target="_blank" rel="noopener noreferrer">cuisineaz</a> </span>
+        </div>
+        <img src="images/galette-saucisse.jpg" alt="Galette-Saucisse">
+      </div>
+    </div>
+
+    <div class="food-row">
+      <div class="food-item hidden">
+        <img src="images/croque-monsieur.jpg" alt="Croque-Monsieur">
+        <div class="food-content">
+          <h2>Croque-Monsieur</h2>
+          <p>A grilled ham and cheese sandwich (egg on top for Madame)</p>
+          <div class="extra-text">
+            This Parisian favorite is a buttery toasted sandwich filled with ham and melted cheese, often topped with
+            creamy béchamel. The Croque-Madame variation adds a fried egg on top. Portable and hearty, it’s a common
+            street food and café snack across France.
+          </div>
+          <span class="img-source">📷 Source: <a
+              href="https://www.goodhousekeeping.com/uk/food/recipes/a537339/croque-monsieur/" target="_blank"
+              rel="noopener noreferrer">Good HouseKeeping</a> </span>
+        </div>
+      </div>
+
+      <div class="food-item right hidden">
+        <div class="food-content">
+          <h2>Socca</h2>
+          <p>Crispy chickpea pancake from Nice</p>
+          <div class="extra-text">
+            Originating in Nice, socca is a thin pancake made from chickpea flour, olive oil, and water, cooked in a
+            wood-fired oven. Crisp outside and soft inside, it’s usually sprinkled with pepper and served hot in paper
+            cones. Gluten-free and naturally delicious.
+          </div>
+          <span class="img-source">📷 Source: <a
+              href="https://www.ricardocuisine.com/en/recipes/8531-gluten-free-anise-socca-chickpea-flour-flatbread"
+              target="_blank" rel="noopener noreferrer">RICARDO</a> </span>
+        </div>
+        <img src="images/socca.jpg" alt="Socca">
+      </div>
+    </div>
+
+    <div class="food-row">
+      <div class="food-item hidden">
+        <img src="images/falafel.jpg" alt="Falafel Sandwich">
+        <div class="food-content">
+          <h2>Falafel Sandwich</h2>
+          <p>Chickpea fritters in pita bread with veggies</p>
+          <div class="extra-text">
+            Especially popular in Paris’s Marais district, falafel sandwiches are loaded with crispy chickpea fritters,
+            fresh vegetables, pickles, and creamy tahini sauce inside warm pita. Though Middle Eastern in origin, it’s
+            one of the most iconic Parisian street foods.
+          </div>
+          <span class="img-source">📷 Source: <a href="https://thefoodiephysician.com/dining-with-doc-baked-falafel/"
+              target="_blank" rel="noopener noreferrer">The Foodie Physician</a> </span>
+        </div>
+      </div>
+
+      <div class="food-item right hidden">
+        <div class="food-content">
+          <h2>Jambon-Beurre</h2>
+          <p>Classic ham and butter baguette sandwich</p>
+          <div class="extra-text">
+            The simplest and most beloved French lunch. Crusty baguette spread with salted butter and filled with cured
+            ham. Its charm lies in the quality of ingredients: good bread, creamy butter, and flavorful ham. Found in
+            bakeries and street stalls everywhere.
+          </div>
+          <span class="img-source">📷 Source: <a href="https://lindseyeatsla.com/jambon-beurre-sandwich/"
+              target="_blank" rel="noopener noreferrer">lindsey eats</a> </span>
+        </div>
+        <img src="images/jambon-beurre.jpg" alt="Jambon-Beurre">
+      </div>
+    </div>
+
+    <div class="food-row">
+      <div class="food-item hidden">
+        <img src="images/churros.jpg" alt="Churros">
+        <div class="food-content">
+          <h2>Churros</h2>
+          <p>Fried dough sticks with sugar</p>
+          <div class="extra-text">
+            Often sold at fairs and seaside towns, French churros are fried dough sticks dusted with sugar and served in
+            paper cones. They are sometimes denser than Spanish churros, and vendors often offer Nutella or chocolate
+            sauce for dipping.
+          </div>
+          <span class="img-source">📷 Source: <a href="https://www.recipetineats.com/spanish-churros-recipe/"
+              target="_blank" rel="noopener noreferrer">recipetineats</a> </span>
+        </div>
+      </div>
+
+      <div class="food-item right hidden">
+        <div class="food-content">
+          <h2>Frites</h2>
+          <p>Golden, crispy fries in a paper cone</p>
+          <div class="extra-text">
+            Double-fried for extra crispiness, French fries are a street food staple. Sold in cones or trays with sauces
+            like mayonnaise, aioli, or spicy ketchup. Especially popular in northern France, they’re perfect as a snack
+            or side dish.
+          </div>
+          <span class="img-source">📷 Source: <a href="https://www.foodandwine.com/recipes/pommes-frites"
+              target="_blank" rel="noopener noreferrer"> FOOD&WINE </a> </span>
+        </div>
+        <img src="images/frites.jpg" alt="Frites">
+      </div>
+    </div>
+
+    <div class="food-row">
+      <div class="food-item hidden">
+        <img src="images/quiche.jpg" alt="Quiche Lorraine">
+        <div class="food-content">
+          <h2>Quiche Lorraine</h2>
+          <p>Savory egg tart with bacon and cheese</p>
+          <div class="extra-text">
+            From the Lorraine region, this classic quiche is made with eggs, cream, smoky bacon, and cheese baked in a
+            flaky pastry shell. Often sold in bakeries by the slice, it’s a warm and filling street snack with countless
+            variations (spinach, salmon, vegetables).
+          </div>
+          <span class="img-source">📷 Source: <a href="https://www.budgetbytes.com/easy-quiche-lorraine/"
+              target="_blank" rel="noopener noreferrer">BUDGET BYTE$</a> </span>
+        </div>
+      </div>
+
+      <div class="food-item right hidden">
+        <div class="food-content">
+          <h2>Beignets</h2>
+          <p>French doughnuts dusted with sugar</p>
+          <div class="extra-text">
+            These pillowy fried pastries are light and soft inside, dusted generously with powdered sugar. In southern
+            France, they’re sold hot from street vendors, sometimes filled with chocolate, jam, or custard. A sweet and
+            indulgent treat.
+          </div>
+          <span class="img-source">📷 Source: <a href="https://www.southernliving.com/recipes/new-orleans-beignets"
+              target="_blank" rel="noopener noreferrer">Southern Living</a> </span>
+        </div>
+        <img src="images/beignets.jpg" alt="Beignets">
+      </div>
+    </div>
+  </section>
+
+
+ <!-- Footer -->
+  <div class="footer-buttons">
+    <a href="../homepage/index.html" class="btn footer-btn">Home</a>
+    <a href="#top" id="backToTop" class="btn footer-btn">Top</a>
+  </div>
+
+  <!-- Copyright Footer -->
+  <footer class="border-top py-4">
+    <div class="container text-center small text-white" >
+      &copy; 2025 Street Food Delight | All Rights Reserved
+    </div>
+  </footer>
+  <script src="francescript.js" defer></script>
+</body>
+</html>

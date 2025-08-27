@@ -1,0 +1,301 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    overflow-x: hidden;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Hero */
+.hero-section {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url("images/france.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    transition: background 0.3s;
+}
+
+.hero-section h1,
+.hero-section p {
+    position: relative;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease;
+}
+
+.hero-section p {
+    font-size: 22px;
+    animation: fadeInUp 1.2s ease;
+}
+
+/* Food list */
+.food-list {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.food-row {
+    display: flex;
+    gap: 20px;
+}
+
+.food-item {
+    flex: 1 1 600px;
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: flex 0.4s ease, opacity 0.8s ease, transform 0.8s ease;
+    height: auto;
+    min-height: 320px;
+    cursor: pointer;
+    margin: 15px auto;
+    max-width: 900px;
+}
+
+.food-item img {
+    width: 45%;
+    object-fit: cover;
+}
+
+.food-content {
+    width: 55%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.food-content h2 {
+    margin-bottom: 10px;
+}
+
+.extra-text {
+    margin-top: 15px;
+    display: none;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Show only when expanded */
+.food-item.hovered .extra-text,
+.food-item.locked .extra-text {
+    display: block;
+}
+
+/* Force right-side items to always be text left + image right */
+.food-item.right {
+    flex-direction: row;
+}
+
+.food-item.right .food-content {
+    order: 1;
+}
+
+.food-item.right img {
+    order: 2;
+}
+
+/* Expand–shrink effect */
+.food-item.hovered {
+    flex: 1.5;
+}
+
+.food-item.shrink {
+    flex: 0.5;
+}
+
+/* Fade in Animation*/
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+/* Mobile: stack cleanly, no forced height */
+@media (max-width: 768px) {
+    .food-row {
+        flex-direction: column !important;
+        align-items: stretch;
+    }
+
+    .food-item {
+        /* override the desktop flex: 1 1 600px */
+        flex: none !important;
+        /* no fixed basis → no tall empty space */
+        flex-direction: column !important;
+        height: auto !important;
+        min-height: 0 !important;
+        margin: 12px 0;
+        max-width: none;
+    }
+
+    /* Always image on top, text below */
+    .food-item img {
+        order: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        max-height: 260px;
+        /* optional cap */
+        object-fit: cover;
+        display: block;
+    }
+
+    .food-content {
+        order: 1 !important;
+        width: 100% !important;
+        padding: 16px;
+    }
+
+    .food-item.hovered,
+    .food-item.shrink {
+        flex: none !important;
+    }
+
+    .footer-buttons {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+        gap: 20px !important;
+        margin: 20px 0;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+
+    .footer-btn {
+        display: inline-block;
+        padding: 10px 14px;
+        font-size: 14px;
+        border-radius: 8px;
+        text-decoration: none;
+        white-space: nowrap;
+
+    }
+
+    .footer-btn:active {
+        background-color: #333;
+        color: #fff;
+        transform: scale(0.96);
+        transition: transform 0.15s ease, background 0.3s ease;
+    }
+
+    .footer-btn:focus {
+        outline: none;
+        background-color: #222;
+
+        color: #fff;
+    }
+}
+
+
+
+/* --- FOOTER + DARK MODE --- */
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 800px;
+    margin: 20px 0;
+}
+
+.footer-btn {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+body.dark {
+    background: #121212;
+    color: #eee;
+}
+
+body.dark .navbar {
+    background: #1e1e1e !important;
+}
+
+body.dark .navbar,
+body.dark .navbar a,
+body.dark .navbar-brand,
+body.dark .nav-link {
+    color: #fff !important;
+}
+
+body.dark .food-item {
+    background: #1e1e1e;
+    color: #eee;
+}
+
+body.dark footer {
+    background: #111;
+}
+
+body.dark footer a {
+    color: #ddd;
+}
+
+body.dark .hero-section::before {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+body.dark .footer-btn {
+    background-color: #f8f9fa;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+body.dark .extra-text {
+    color: #eee;
+}
+
+footer {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+footer a {
+    color: #fff !important;
+}
+
+/* ===================== Brand Mark (Navbar) ===================== */
+.brand-mark {
+    display: inline-grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background: #111;
+    color: #fff;
+    font-weight: 700;
+    margin-right: .4rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .12);
+}
