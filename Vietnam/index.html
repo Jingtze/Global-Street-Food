@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savor Vietnam: A Street Food Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="layout.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../homepage/index.html">
+        <span class="brand-mark">SF</span> Street Food Delight
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link " href="../Malaysia/Malaysia.html">🇲🇾 Malaysia</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Korea/Korea.html">🇰🇷 Korea</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../Vietnam/index.html">🇻🇳 Vietnam</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Japan/japan.html">🇯🇵 Japan</a></li>
+          <li class="nav-item"><a class="nav-link  " href="../Thailand/thailand.html">🇹🇭 Thailand</a></li>
+          <li class="nav-item"><a class="nav-link " href="../China/china.html">🇨🇳 China</a></li>
+          <li class="nav-item"><a class="nav-link " href="../France/france.html">🇫🇷 France</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <header>
+        <h1>Vietnam Street Food</h1>
+      
+    </header>
+
+    <!-- New Food List Section -->
+    <section id="food-list-section" class="container1">
+        <h2>Explore Our Street Food Selection</h2>
+        <ul>
+            <li><a href="#pho-card">Beef Noodle Soup (Phở)</a></li>
+            <li><a href="#banhmi-card">Vietnamese Sandwich (Bánh Mì)</a></li>
+            <li><a href="#goicuon-card">Fresh Spring Rolls (Gỏi Cuốn)</a></li>
+            <li><a href="#buncha-card">Grilled Pork with Vermicelli (Bún Chả)</a></li>
+            <li><a href="#comtam-card">Broken Rice (Cơm Tấm)</a></li>
+            <li><a href="#banhxeo-card">Sizzling Pancake (Bánh Xèo)</a></li>
+        </ul>
+    </section>
+
+    <main class="container" id="food-cards-container">
+        <!-- Food Cards will be appended here by JavaScript -->
+        <!-- Pho Card -->
+        <div class="food-card" id="pho-card" data-food-id="pho">
+            <div class="image-title-container">
+                <img src="images/image13.jfif" alt="Vietnamese Pho">
+                <h2>Beef Noodle Soup (Pho)</h2>
+            </div>
+            <div class="description-content">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="intro-pho">Introduction</button>
+                    <button class="tab-button" data-tab="ingredients-pho">Ingredients</button>
+                    <button class="tab-button" data-tab="pricing-pho">Pricing</button>
+                </div>
+                <div id="intro-pho" class="tab-pane active">
+                    <p>The iconic Vietnamese noodle soup, known for for its aromatic broth, tender meat (beef or chicken), and fresh herbs. Phở is more than just a soup; it's a national dish and a cornerstone of Vietnamese cuisine. The broth is simmered for hours with bones and spices like star anise, cinnamon, and ginger. Served with rice noodles, thin slices of beef or chicken, and a platter of fresh herbs, lime, and chilies to customize to your taste.</p>
+                </div>
+                <div id="ingredients-pho" class="tab-pane">
+                    <p><strong>Key Ingredients:</strong> Beef or chicken broth, rice noodles, thinly sliced beef (e.g., brisket, rare steak) or chicken, ginger, star anise, cinnamon, cloves, black cardamom, fish sauce, onion, fresh herbs (basil, cilantro, mint), bean sprouts, lime, chili.</p>
+                </div>
+                <div id="pricing-pho" class="tab-pane">
+                    <p><strong>Typical Pricing:</strong> A bowl of Phở generally ranges from 30,000 VND to 60,000 VND ($1.20 - $2.50 USD) at street stalls, depending on the city and vendor.</p>
+                </div>
+            </div>
+            <div class="like-button" data-food-id="pho">♡</div>
+        </div>
+
+        <!-- Banh Mi Card -->
+        <div class="food-card" id="banhmi-card" data-food-id="banhmi">
+            <div class="image-title-container">
+                <img src="images/image14.jfif" alt="Vietnamese Banh Mi">
+                <h2>Vietnamese Sandwich (Banh Mi)</h2>
+            </div>
+            <div class="description-content">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="intro-banhmi">Introduction</button>
+                    <button class="tab-button" data-tab="ingredients-banhmi">Ingredients</button>
+                    <button class="tab-button" data-tab="pricing-banhmi">Pricing</button>
+                </div>
+                <div id="intro-banhmi" class="tab-pane active">
+                    <p>A delicious fusion sandwich featuring a crispy baguette filled with savory meats, pâté, pickled vegetables, and fresh herbs. The Bánh Mì is a legacy of French colonial rule, transformed into a uniquely Vietnamese delight. It typically includes a crispy baguette, a variety of cold cuts (or grilled meats), rich pâté, mayonnaise, pickled daikon and carrots, cucumber, cilantro, and often a touch of chili. It's a perfect example of Vietnamese culinary ingenuity.</p>
+                </div>
+                <div id="ingredients-banhmi" class="tab-pane">
+                    <p><strong>Key Ingredients:</strong> Crispy baguette, various meats (e.g., roasted pork, grilled chicken, Vietnamese ham, cold cuts), pork liver pâté, mayonnaise, pickled daikon and carrots, cucumber, cilantro, fresh chili, soy sauce or maggi seasoning.</p>
+                </div>
+                <div id="pricing-banhmi" class="tab-pane">
+                    <p><strong>Typical Pricing:</strong> A Bánh Mì usually costs between 15,000 VND to 40,000 VND ($0.60 - $1.70 USD) at street vendors.</p>
+                </div>
+            </div>
+            <div class="like-button" data-food-id="banhmi">♡</div>
+        </div>
+
+        <!-- Goi Cuon (Fresh Spring Rolls) Card -->
+        <div class="food-card" id="goicuon-card" data-food-id="goicuon">
+            <div class="image-title-container">
+                <img src="images/image15.jfif" alt="Vietnamese Fresh Spring Rolls">
+                <h2>Fresh Spring Rolls (Goi Cuon)</h2>
+            </div>
+            <div class="description-content">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="intro-goicuon">Introduction</button>
+                    <button class="tab-button" data-tab="ingredients-goicuon">Ingredients</button>
+                    <button class="tab-button" data-tab="pricing-goicuon">Pricing</button>
+                </div>
+                <div id="intro-goicuon" class="tab-pane active">
+                    <p>Light and refreshing fresh spring rolls, filled with shrimp, pork, vermicelli noodles, and fresh vegetables, served with a flavorful dipping sauce. Unlike fried spring rolls, Gỏi Cuốn are served fresh, wrapped in translucent rice paper. They are a healthy and popular appetizer or light meal, often dipped in a rich peanut sauce or a light fish sauce (nước chấm). The combination of textures and flavors makes them incredibly satisfying.</p>
+                </div>
+                <div id="ingredients-goicuon" class="tab-pane">
+                    <p><strong>Key Ingredients:</strong> Rice paper wrappers, cooked shrimp, boiled pork slices, vermicelli noodles, lettuce, mint, cilantro, various dipping sauces (peanut sauce or nước chấm).</p>
+                </div>
+                <div id="pricing-goicuon" class="tab-pane">
+                    <p><strong>Typical Pricing:</strong> A plate of 2-4 Gỏi Cuốn typically ranges from 20,000 VND to 40,000 VND ($0.80 - $1.70 USD).</p>
+                </div>
+            </div>
+            <div class="like-button" data-food-id="goicuon">♡</div>
+        </div>
+
+        <!-- Bun Cha Card -->
+        <div class="food-card" id="buncha-card" data-food-id="buncha">
+            <div class="image-title-container">
+                <img src="images/image16.jfif" alt="Vietnamese Bun Cha">
+                <h2>Grilled Pork with Vermicelli (Bun Cha)</h2>
+            </div>
+            <div class="description-content">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="intro-buncha">Introduction</button>
+                    <button class="tab-button" data-tab="ingredients-buncha">Ingredients</button>
+                    <button class="tab-button" data-tab="pricing-buncha">Pricing</button>
+                </div>
+                <div id="intro-buncha" class="tab-pane active">
+                    <p>A Hanoi specialty featuring grilled pork patties and slices of pork belly served with vermicelli noodles and a sweet and sour dipping broth. Bún Chả is a quintessential Hanoi dish. It consists of perfectly grilled seasoned pork patties and tender slices of pork belly, served in a bowl of warm, flavorful dipping sauce (often with pickled green papaya). You eat it by dipping fresh vermicelli noodles and herbs into the broth, creating a delightful mix of flavors and textures in every bite.</p>
+                </div>
+                <div id="ingredients-buncha" class="tab-pane">
+                    <p><strong>Key Ingredients:</strong> Grilled pork patties (chả viên), grilled pork belly (chả miếng), vermicelli noodles (bún), dipping sauce (nước chấm) made with fish sauce, sugar, vinegar, garlic, chili, pickled green papaya, fresh herbs.</p>
+                </div>
+                <div id="pricing-buncha" class="tab-pane">
+                    <p><strong>Typical Pricing:</strong> A serving of Bún Chả typically costs between 30,000 VND to 70,000 VND ($1.20 - $3.00 USD).</p>
+                </div>
+            </div>
+            <div class="like-button" data-food-id="buncha">♡</div>
+        </div>
+
+        <!-- Com Tam Card -->
+        <div class="food-card" id="comtam-card" data-food-id="comtam">
+            <div class="image-title-container">
+                <img src="images/image17.jfif" alt="Vietnamese Broken Rice">
+                <h2>Broken Rice (Com Tam)</h2>
+            </div>
+            <div class="description-content">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="intro-comtam">Introduction</button>
+                    <button class="tab-button" data-tab="ingredients-comtam">Ingredients</button>
+                    <button class="tab-button" data-tab="pricing-comtam">Pricing</button>
+                </div>
+                <div id="intro-comtam" class="tab-pane active">
+                    <p>A popular Southern Vietnamese dish of broken rice served with various grilled meats, a fried egg, and fresh vegetables. Cơm Tấm, or "broken rice," was originally a humble dish made from fractured rice grains, traditionally eaten by farmers. Today, it's a beloved staple, often served with grilled pork chop (sườn nướng), shredded pork skin (bì), a steamed egg meatloaf (chả trứng), and a fried egg (ốp la), all drizzled with fish sauce.</p>
+                </div>
+                <div id="ingredients-comtam" class="tab-pane">
+                    <p><strong>Key Ingredients:</strong> Broken rice, grilled pork chop (sườn nướng), shredded pork skin (bì), steamed egg meatloaf (chả trứng), fried egg (trứng ốp la), cucumber, tomato, pickled vegetables, scallion oil, nước chấm (fish sauce dipping sauce).</p>
+                </div>
+                <div id="pricing-comtam" class="tab-pane">
+                    <p><strong>Typical Pricing:</strong> A plate of Cơm Tấm costs around 25,000 VND to 50,000 VND ($1.00 - $2.10 USD).</p>
+                </div>
+            </div>
+            <div class="like-button" data-food-id="comtam">♡</div>
+        </div>
+
+        <!-- Banh Xeo Card -->
+        <div class="food-card" id="banhxeo-card" data-food-id="banhxeo">
+            <div class="image-title-container">
+                <img src="images/image18.jfif" alt="Vietnamese Sizzling Pancake">
+                <h2>Sizzling Pancake Banh Xeo</h2>
+            </div>
+            <div class="description-content">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="intro-banhxeo">Introduction</button>
+                    <button class="tab-button" data-tab="ingredients-banhxeo">Ingredients</button>
+                    <button class="tab-button" data-tab="pricing-banhxeo">Pricing</button>
+                </div>
+                <div id="intro-banhxeo" class="tab-pane active">
+                    <p>A savory, crispy, and often turmeric-infused pancake filled with shrimp, pork, bean sprouts, and herbs. Named for the sizzling sound it makes when cooked ("xèo" means sizzle), Bánh Xèo is a popular street food, especially in Southern Vietnam. It's made from a rice flour batter, often colored with turmeric, and filled with a combination of shrimp, pork, and bean sprouts. It's typically eaten by wrapping pieces of the pancake in lettuce leaves with fresh herbs, then dipping into a light fish sauce.</p>
+                </div>
+                <div id="ingredients-banhxeo" class="tab-pane">
+                    <p><strong>Key Ingredients:</strong> Rice flour, coconut milk, turmeric, shrimp, pork, bean sprouts, green onion, cooking oil, lettuce, fresh herbs (mint, basil), nước chấm (fish sauce dipping sauce).</p>
+                </div>
+                <div id="pricing-banhxeo" class="tab-pane">
+                    <p><strong>Typical Pricing:</strong> A Bánh Xèo can range from 20,000 VND to 50,000 VND ($0.80 - $2.10 USD) per pancake.</p>
+                </div>
+            </div>
+            <div class="like-button" data-food-id="banhxeo">♡</div>
+        </div>
+    </main>
+
+    <section id="comment-section" class="container">
+        <h2>What do you think? Leave a Comment!</h2>
+        <form id="comment-form">
+            <input type="text" id="commenter-name" placeholder="Your Name" required>
+            <textarea id="comment-text" placeholder="Share your thoughts or experiences..." required></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+        <h3>All Comments:</h3>
+        <div id="comments-list">
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Street Food Delight | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
